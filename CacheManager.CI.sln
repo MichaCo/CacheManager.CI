@@ -6,6 +6,10 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{316DD6BA-004C-41B5-816C-E6BB021B13CA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FF4D4BAE-6DB0-4D19-9EF5-37D21C0B039E}"
+	ProjectSection(SolutionItems) = preProject
+		NuGet.config = NuGet.config
+		README.md = README.md
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "src\ConsoleApp\ConsoleApp.csproj", "{10BD3429-8006-4BD3-B2BB-2E2F7411C99A}"
 EndProject
