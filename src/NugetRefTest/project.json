@@ -1,0 +1,44 @@
+{
+  "version": "1.0.0-*",
+  "description": "NugetRefTest Console Application",
+  "authors": [ "Micha" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+
+  "dependencies": {
+    "CacheManager.AspNetCore.Logging": "0.7.4-beta-1141",
+    "CacheManager.Core": "0.7.4-beta-1141",
+    "CacheManager.Serialization.Json": "0.7.4-beta-1141",
+    "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final"
+  },
+
+  "commands": {
+    "NugetRefTest": "NugetRefTest"
+  },
+
+  "frameworks": {
+    "dnx451": {
+      "dependencies": {
+        "CacheManager.Couchbase": "0.7.4-beta-1141",
+        "CacheManager.MemCached": "0.7.4-beta-1141",
+        "CacheManager.StackExchange.Redis": "0.7.4-beta-1141",
+        "CacheManager.SystemRuntimeCaching": "0.7.4-beta-1141",
+        "CacheManager.Web": "0.7.4-beta-1141"
+      }
+    },
+    "dnxcore50": {
+      "dependencies": {
+        "Microsoft.CSharp": "4.0.1-beta-23516",
+        "System.Collections": "4.0.11-beta-23516",
+        "System.Console": "4.0.0-beta-23516",
+        "System.Linq": "4.0.1-beta-23516",
+        "System.Threading": "4.0.11-beta-23516"
+      }
+    }
+  }
+}
