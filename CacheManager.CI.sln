@@ -6,11 +6,8 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{316DD6BA-004C-41B5-816C-E6BB021B13CA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FF4D4BAE-6DB0-4D19-9EF5-37D21C0B039E}"
-	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
-	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "AspNetCore.Tests", "src\AspNetCore.Tests\AspNetCore.Tests.xproj", "{E4DF5D30-12E9-4F2C-8BCF-2CA43DA2E644}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "src\ConsoleApp\ConsoleApp.csproj", "{10BD3429-8006-4BD3-B2BB-2E2F7411C99A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,15 +15,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E4DF5D30-12E9-4F2C-8BCF-2CA43DA2E644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E4DF5D30-12E9-4F2C-8BCF-2CA43DA2E644}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E4DF5D30-12E9-4F2C-8BCF-2CA43DA2E644}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E4DF5D30-12E9-4F2C-8BCF-2CA43DA2E644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10BD3429-8006-4BD3-B2BB-2E2F7411C99A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10BD3429-8006-4BD3-B2BB-2E2F7411C99A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10BD3429-8006-4BD3-B2BB-2E2F7411C99A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10BD3429-8006-4BD3-B2BB-2E2F7411C99A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{E4DF5D30-12E9-4F2C-8BCF-2CA43DA2E644} = {316DD6BA-004C-41B5-816C-E6BB021B13CA}
+		{10BD3429-8006-4BD3-B2BB-2E2F7411C99A} = {316DD6BA-004C-41B5-816C-E6BB021B13CA}
 	EndGlobalSection
 EndGlobal
