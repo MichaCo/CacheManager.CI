@@ -9,37 +9,41 @@ namespace NugetRefTest
         public static void Main(string[] args)
         {
             var cache = CacheFactory.Build<string>(
-                   s =>
-                   {
-                       s.WithMaxRetries(50);
-                       s.WithRetryTimeout(100);
-                       s.WithUpdateMode(CacheUpdateMode.Up);
-                       s.WithAspNetLogging(
-                           f =>
-                           f.AddDebug(LogLevel.Verbose));
-                       s.WithJsonSerializer();
-                       s.WithDictionaryHandle();
+                s =>
+                {
+                    s.WithMaxRetries(50);
+                    s.WithRetryTimeout(100);
+                    s.WithUpdateMode(CacheUpdateMode.Up);
+                    s.WithAspNetLogging(
+                        f =>
+                        {
+                            f.MinimumLevel = LogLevel.Debug;
+                            f.AddDebug(LogLevel.Debug);
+                        });
+
+                    s.WithJsonSerializer();
+                    s.WithDictionaryHandle();
 #if !DNXCORE50
-                       s.WithSystemRuntimeDefaultCacheHandle()
-                          .EnablePerformanceCounters()
-                          .WithExpiration(ExpirationMode.Sliding, TimeSpan.FromSeconds(10));
+                    s.WithSystemRuntimeDefaultCacheHandle()
+                        .EnablePerformanceCounters()
+                        .WithExpiration(ExpirationMode.Sliding, TimeSpan.FromSeconds(10));
 
-                       s.WithCouchbaseConfiguration("couch", new Couchbase.Configuration.Client.ClientConfiguration());
-                       s.WithCouchbaseCacheHandle("couch");
+                    s.WithCouchbaseConfiguration("couch", new Couchbase.Configuration.Client.ClientConfiguration());
+                    s.WithCouchbaseCacheHandle("couch");
 
-                       s.WithMemcachedCacheHandle("memcached");
+                    s.WithMemcachedCacheHandle("memcached");
 
-                       s.WithRedisBackPlate("redisConfigKey");
-                       s.WithRedisConfiguration("redisConfigKey",
-                           cfg =>
-                           cfg.WithEndpoint("127.0.0.1", 6379)
-                           .WithDatabase(0)
-                           .WithAllowAdmin());
-                       s.WithRedisCacheHandle("redisConfigKey", true)
-                           .EnablePerformanceCounters()
-                           .WithExpiration(ExpirationMode.Absolute, TimeSpan.FromMinutes(2));
+                    s.WithRedisBackPlate("redisConfigKey");
+                    s.WithRedisConfiguration("redisConfigKey",
+                        cfg =>
+                        cfg.WithEndpoint("127.0.0.1", 6379)
+                        .WithDatabase(0)
+                        .WithAllowAdmin());
+                    s.WithRedisCacheHandle("redisConfigKey", true)
+                        .EnablePerformanceCounters()
+                        .WithExpiration(ExpirationMode.Absolute, TimeSpan.FromMinutes(2));
 #endif
-                   });
+                });
         }
     }
 }

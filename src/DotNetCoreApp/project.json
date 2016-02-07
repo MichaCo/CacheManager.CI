@@ -11,9 +11,9 @@
   },
 
   "dependencies": {
-    "CacheManager.AspNetCore.Logging": "0.7.4-beta-1141",
-    "CacheManager.Core": "0.7.4-beta-1141",
-    "CacheManager.Serialization.Json": "0.7.4-beta-1141",
+    "CacheManager.AspNetCore.Logging": "0.7.4-beta-1150",
+    "CacheManager.Core": "0.7.4-beta-1150",
+    "CacheManager.Serialization.Json": "0.7.4-beta-1150",
     "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final"
   },
 
@@ -24,8 +24,8 @@
   "frameworks": {
     "dnx451": {
       "dependencies": {
-        "CacheManager.StackExchange.Redis": "0.7.4-beta-1141",
-        "CacheManager.SystemRuntimeCaching": "0.7.4-beta-1141"
+        "CacheManager.StackExchange.Redis": "0.7.4-beta-1150",
+        "CacheManager.SystemRuntimeCaching": "0.7.4-beta-1150"
       }
     },
     "dnxcore50": {

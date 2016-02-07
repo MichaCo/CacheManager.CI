@@ -17,8 +17,11 @@ namespace DotNetCoreApp
                     s.WithUpdateMode(CacheUpdateMode.Up);
                     s.WithAspNetLogging(
                         f =>
-                        f.AddDebug(LogLevel.Verbose)
-                        .AddProvider(new MyConsoleLoggerProviderBecauseRC1DoesntWork()));
+                        {
+                            f.MinimumLevel = LogLevel.Debug;
+                            f.AddDebug(LogLevel.Debug);
+                            f.AddProvider(new MyConsoleLoggerProviderBecauseRC1DoesntWork());
+                        });
 
                     s.WithDictionaryHandle();
 #if !DNXCORE50
