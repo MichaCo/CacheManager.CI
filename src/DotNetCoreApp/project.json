@@ -11,10 +11,10 @@
   },
 
   "dependencies": {
-    "CacheManager.Core": "0.7.4-beta-1158",
-    "CacheManager.Microsoft.Extensions.Configuration": "0.7.4-beta-1158",
-    "CacheManager.Microsoft.Extensions.Logging": "0.7.4-beta-1158",
-    "CacheManager.Serialization.Json": "0.7.4-beta-1158",
+    "CacheManager.Core": "0.7.4-beta-1178",
+    "CacheManager.Microsoft.Extensions.Configuration": "0.7.4-beta-1178",
+    "CacheManager.Microsoft.Extensions.Logging": "0.7.4-beta-1178",
+    "CacheManager.Serialization.Json": "0.7.4-beta-1178",
     "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final"
   },
 
@@ -25,8 +25,8 @@
   "frameworks": {
     "dnx451": {
       "dependencies": {
-        "CacheManager.StackExchange.Redis": "0.7.4-beta-1158",
-        "CacheManager.SystemRuntimeCaching": "0.7.4-beta-1158"
+        "CacheManager.StackExchange.Redis": "0.7.4-beta-1178",
+        "CacheManager.SystemRuntimeCaching": "0.7.4-beta-1178"
       }
     },
     "dnxcore50": {

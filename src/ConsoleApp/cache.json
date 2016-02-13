@@ -1,0 +1,17 @@
+﻿{
+  "$schema": "http://cachemanager.net/schemas/cachemanager.json",
+  "cacheManagers": [
+    {
+      "handles": [
+        {
+          "knownType": "Dictionary",
+          "enableStatistics": true,
+          "enablePerformanceCounters": true,
+          "expirationTimeout": "0:20:0",
+          "expirationMode": "Sliding",
+          "isBackPlateSource": false
+        }
+      ]
+    }
+  ]
+}

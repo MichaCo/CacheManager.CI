@@ -15,7 +15,7 @@ namespace DotNetCoreApp
                     s.WithMaxRetries(50);
                     s.WithRetryTimeout(100);
                     s.WithUpdateMode(CacheUpdateMode.Up);
-                    s.WithAspNetLogging(
+                    s.WithMicrosoftLogging(
                         f =>
                         {
                             f.MinimumLevel = LogLevel.Debug;

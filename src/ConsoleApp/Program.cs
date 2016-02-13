@@ -1,6 +1,7 @@
 ﻿using System;
 using CacheManager.Core;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Configuration;
 using Test;
 
 namespace ConsoleApp
@@ -15,7 +16,7 @@ namespace ConsoleApp
                     s.WithMaxRetries(50);
                     s.WithRetryTimeout(100);
                     s.WithUpdateMode(CacheUpdateMode.Up);
-                    s.WithAspNetLogging(
+                    s.WithMicrosoftLogging(
                         f =>
                         {
                             f.MinimumLevel = LogLevel.Debug;
@@ -42,6 +43,22 @@ namespace ConsoleApp
             cache.Clear();
 
             Tests.TestEachMethod(cache);
+
+            // json test
+            var config = new Microsoft.Extensions.Configuration.ConfigurationBuilder()
+                .AddJsonFile("cache.json").Build();
+
+            var cacheConfig = config.GetCacheConfiguration()
+                .WithMicrosoftLogging(f =>
+                {
+                    f.MinimumLevel = LogLevel.Debug;
+                    f.AddDebug(LogLevel.Debug);
+                    f.AddProvider(new MyConsoleLoggerProviderBecauseRC1DoesntWork());
+                });
+
+            var fromJsonCache = new BaseCacheManager<string>(cacheConfig);
+
+            Tests.TestEachMethod(fromJsonCache);
         }
     }
 }
