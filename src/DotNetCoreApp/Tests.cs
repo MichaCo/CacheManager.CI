@@ -16,7 +16,7 @@ namespace Test
             cache.Expire("key", "region", TimeSpan.FromDays(1));
             var val = cache.Get("key", "region");
             var item = cache.GetCacheItem("key", "region");
-            cache.Put("key", "region", "put value");
+            cache.Put("key", "put value", "region");
             cache.RemoveExpiration("key", "region");
 
             string update2;
