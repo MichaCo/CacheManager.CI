@@ -34,27 +34,27 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CacheManager.Core, Version=0.7.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CacheManager.Core.0.7.4-beta-1178\lib\net45\CacheManager.Core.dll</HintPath>
+      <HintPath>..\..\packages\CacheManager.Core.0.7.4-beta-1185\lib\net45\CacheManager.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="CacheManager.Microsoft.Extensions.Configuration, Version=0.7.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CacheManager.Microsoft.Extensions.Configuration.0.7.4-beta-1178\lib\net451\CacheManager.Microsoft.Extensions.Configuration.dll</HintPath>
+      <HintPath>..\..\packages\CacheManager.Microsoft.Extensions.Configuration.0.7.4-beta-1185\lib\net451\CacheManager.Microsoft.Extensions.Configuration.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="CacheManager.Microsoft.Extensions.Logging, Version=0.7.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CacheManager.Microsoft.Extensions.Logging.0.7.4-beta-1178\lib\net451\CacheManager.Microsoft.Extensions.Logging.dll</HintPath>
+      <HintPath>..\..\packages\CacheManager.Microsoft.Extensions.Logging.0.7.4-beta-1185\lib\net451\CacheManager.Microsoft.Extensions.Logging.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="CacheManager.Serialization.Json, Version=0.7.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CacheManager.Serialization.Json.0.7.4-beta-1178\lib\net45\CacheManager.Serialization.Json.dll</HintPath>
+      <HintPath>..\..\packages\CacheManager.Serialization.Json.0.7.4-beta-1185\lib\net45\CacheManager.Serialization.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="CacheManager.StackExchange.Redis, Version=0.7.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CacheManager.StackExchange.Redis.0.7.4-beta-1178\lib\net45\CacheManager.StackExchange.Redis.dll</HintPath>
+      <HintPath>..\..\packages\CacheManager.StackExchange.Redis.0.7.4-beta-1185\lib\net45\CacheManager.StackExchange.Redis.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="CacheManager.SystemRuntimeCaching, Version=0.7.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CacheManager.SystemRuntimeCaching.0.7.4-beta-1178\lib\net45\CacheManager.SystemRuntimeCaching.dll</HintPath>
+      <HintPath>..\..\packages\CacheManager.SystemRuntimeCaching.0.7.4-beta-1185\lib\net45\CacheManager.SystemRuntimeCaching.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Extensions.Configuration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">

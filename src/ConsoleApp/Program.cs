@@ -31,7 +31,7 @@ namespace ConsoleApp
                     //    .WithDatabase(0)
                     //    .WithAllowAdmin());
 
-                    s.WithSystemRuntimeDefaultCacheHandle()
+                    s.WithSystemRuntimeCacheHandle()
                         .EnablePerformanceCounters()
                         .WithExpiration(ExpirationMode.Sliding, TimeSpan.FromSeconds(10));
 
@@ -49,12 +49,14 @@ namespace ConsoleApp
                 .AddJsonFile("cache.json").Build();
 
             var cacheConfig = config.GetCacheConfiguration()
+                .Builder
                 .WithMicrosoftLogging(f =>
                 {
                     f.MinimumLevel = LogLevel.Debug;
                     f.AddDebug(LogLevel.Debug);
                     f.AddProvider(new MyConsoleLoggerProviderBecauseRC1DoesntWork());
-                });
+                })
+                .Build();
 
             var fromJsonCache = new BaseCacheManager<string>(cacheConfig);
 

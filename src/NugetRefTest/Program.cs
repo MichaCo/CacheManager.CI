@@ -24,7 +24,7 @@ namespace NugetRefTest
                     s.WithJsonSerializer();
                     s.WithDictionaryHandle();
 #if !DNXCORE50
-                    s.WithSystemRuntimeDefaultCacheHandle()
+                    s.WithSystemRuntimeCacheHandle()
                         .EnablePerformanceCounters()
                         .WithExpiration(ExpirationMode.Sliding, TimeSpan.FromSeconds(10));
 
