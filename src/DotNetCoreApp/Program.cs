@@ -30,7 +30,7 @@ namespace DotNetCoreApp
                         .WithExpiration(ExpirationMode.Sliding, TimeSpan.FromSeconds(10));
 
                     s.WithJsonSerializer();
-                    s.WithRedisBackPlate("redisConfigKey");
+                    s.WithRedisBackplane("redisConfigKey");
                     s.WithRedisConfiguration("redisConfigKey",
                         cfg =>
                         cfg.WithEndpoint("127.0.0.1", 6379)

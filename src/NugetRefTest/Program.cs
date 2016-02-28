@@ -33,7 +33,7 @@ namespace NugetRefTest
 
                     s.WithMemcachedCacheHandle("memcached");
 
-                    s.WithRedisBackPlate("redisConfigKey");
+                    s.WithRedisBackplane("redisConfigKey");
                     s.WithRedisConfiguration("redisConfigKey",
                         cfg =>
                         cfg.WithEndpoint("127.0.0.1", 6379)

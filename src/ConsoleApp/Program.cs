@@ -30,7 +30,8 @@ namespace ConsoleApp
                     //    cfg.WithEndpoint("127.0.0.1", 6379)
                     //    .WithDatabase(0)
                     //    .WithAllowAdmin());
-
+                    s.WithDictionaryHandle();
+                    s.WithDictionaryHandle();
                     s.WithSystemRuntimeCacheHandle()
                         .EnablePerformanceCounters()
                         .WithExpiration(ExpirationMode.Sliding, TimeSpan.FromSeconds(10));
