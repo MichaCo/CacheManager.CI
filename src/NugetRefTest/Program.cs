@@ -17,13 +17,12 @@ namespace NugetRefTest
                     s.WithMicrosoftLogging(
                         f =>
                         {
-                            f.MinimumLevel = LogLevel.Debug;
-                            f.AddDebug(LogLevel.Debug);
+                            f.AddDebug(LogLevel.Trace);
                         });
 
                     s.WithJsonSerializer();
                     s.WithDictionaryHandle();
-#if !DNXCORE50
+#if !NETCORE
                     s.WithSystemRuntimeCacheHandle()
                         .EnablePerformanceCounters()
                         .WithExpiration(ExpirationMode.Sliding, TimeSpan.FromSeconds(10));

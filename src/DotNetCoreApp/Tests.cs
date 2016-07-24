@@ -52,19 +52,19 @@ namespace Test
 
         public string Name { get; }
 
-        public IDisposable BeginScopeImpl(object state)
+        public IDisposable BeginScope<TState>(TState state)
         {
             return null;
         }
-
+        
         public bool IsEnabled(LogLevel logLevel)
         {
             return true;
         }
-
-        public void Log(LogLevel logLevel, int eventId, object state, Exception exception, Func<object, Exception, string> formatter)
+        
+        public void Log<TState>(LogLevel logLevel, EventId eventId, TState state, Exception exception, Func<TState, Exception, string> formatter)
         {
-            Console.WriteLine("{0}: {1}: {2}", this.Name, logLevel, formatter(state, exception));
+            Console.WriteLine("{0}: {1}: {2}", this.Name, logLevel, formatter(state, exception)); ;
         }
     }
 }

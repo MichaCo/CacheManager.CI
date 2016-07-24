@@ -18,13 +18,12 @@ namespace DotNetCoreApp
                     s.WithMicrosoftLogging(
                         f =>
                         {
-                            f.MinimumLevel = LogLevel.Debug;
-                            f.AddDebug(LogLevel.Debug);
+                            f.AddDebug(LogLevel.Trace);
                             f.AddProvider(new MyConsoleLoggerProviderBecauseRC1DoesntWork());
                         });
 
                     s.WithDictionaryHandle();
-#if !DNXCORE50
+#if !NETCORE
                     s.WithSystemRuntimeCacheHandle()
                         .EnablePerformanceCounters()
                         .WithExpiration(ExpirationMode.Sliding, TimeSpan.FromSeconds(10));

@@ -19,8 +19,7 @@ namespace ConsoleApp
                     s.WithMicrosoftLogging(
                         f =>
                         {
-                            f.MinimumLevel = LogLevel.Debug;
-                            f.AddDebug(LogLevel.Debug);
+                            f.AddDebug(LogLevel.Trace);
                             f.AddProvider(new MyConsoleLoggerProviderBecauseRC1DoesntWork());
                         });
                     s.WithJsonSerializer();
@@ -32,6 +31,7 @@ namespace ConsoleApp
                     //    .WithAllowAdmin());
                     s.WithDictionaryHandle();
                     s.WithDictionaryHandle();
+                    s.WithMicrosoftMemoryCacheHandle();
                     s.WithSystemRuntimeCacheHandle()
                         .EnablePerformanceCounters()
                         .WithExpiration(ExpirationMode.Sliding, TimeSpan.FromSeconds(10));
@@ -53,8 +53,7 @@ namespace ConsoleApp
                 .Builder
                 .WithMicrosoftLogging(f =>
                 {
-                    f.MinimumLevel = LogLevel.Debug;
-                    f.AddDebug(LogLevel.Debug);
+                    f.AddDebug(LogLevel.Trace);
                     f.AddProvider(new MyConsoleLoggerProviderBecauseRC1DoesntWork());
                 })
                 .Build();
