@@ -22,7 +22,7 @@ namespace ConsoleApp
                             f.AddDebug(LogLevel.Trace);
                             f.AddProvider(new MyConsoleLoggerProviderBecauseRC1DoesntWork());
                         });
-                    s.WithJsonSerializer();
+                    s.WithProtoBufSerializer();
                     //s.WithRedisBackPlate("redisConfigKey");
                     //s.WithRedisConfiguration("redisConfigKey",
                     //    cfg =>
