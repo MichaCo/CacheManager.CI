@@ -27,7 +27,7 @@ namespace DotNetCoreApp
                     s.WithSystemRuntimeCacheHandle()
                         .EnablePerformanceCounters()
                         .WithExpiration(ExpirationMode.Sliding, TimeSpan.FromSeconds(10));
-
+#endif
                     s.WithJsonSerializer();
                     s.WithRedisBackplane("redisConfigKey");
                     s.WithRedisConfiguration("redisConfigKey",
@@ -38,7 +38,7 @@ namespace DotNetCoreApp
                     s.WithRedisCacheHandle("redisConfigKey", true)
                         .EnablePerformanceCounters()
                         .WithExpiration(ExpirationMode.Absolute, TimeSpan.FromMinutes(2));
-#endif
+
                 });
 
             cache.Clear();

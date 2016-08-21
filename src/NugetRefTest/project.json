@@ -16,14 +16,6 @@
     "CacheManager.StackExchange.Redis": "0.9.0-beta-1294",
     "Microsoft.Extensions.Logging.Debug": "1.0.0"
   },
-
-  "commands": {
-    "NugetRefTest": "NugetRefTest"
-  },
-
-  "runtimes": {
-    "win10-x64": {}
-  },
   "frameworks": {
     "net452": {
       "dependencies": {
@@ -36,12 +28,21 @@
     "netcoreapp1.0": {
       "buildOptions": { "define": [ "NETCORE" ] },
       "dependencies": {
-        "Microsoft.NETCore.App": "1.0.0",
+        "Microsoft.NETCore.App": {
+          "version": "1.0.0",
+          "type": "platform"
+        },
         "System.Threading.Thread": "4.0.0",
         "System.Threading.Tasks.Parallel": "4.0.1",
         "System.Console": "4.0.0",
         "System.Runtime": "4.1.0"
-      }
+      },
+      "imports": [
+        "dnxcore50",
+        "netstandardapp1.5",
+        "portable-net45+win8",
+        "portable-net45+wp80+win8+wpa81+dnxcore50"
+      ]
     }
   }
 }
