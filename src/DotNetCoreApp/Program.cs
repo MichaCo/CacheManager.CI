@@ -28,16 +28,16 @@ namespace DotNetCoreApp
                         .EnablePerformanceCounters()
                         .WithExpiration(ExpirationMode.Sliding, TimeSpan.FromSeconds(10));
 #endif
-                    s.WithJsonSerializer();
-                    s.WithRedisBackplane("redisConfigKey");
-                    s.WithRedisConfiguration("redisConfigKey",
-                        cfg =>
-                        cfg.WithEndpoint("127.0.0.1", 6379)
-                        .WithDatabase(0)
-                        .WithAllowAdmin());
-                    s.WithRedisCacheHandle("redisConfigKey", true)
-                        .EnablePerformanceCounters()
-                        .WithExpiration(ExpirationMode.Absolute, TimeSpan.FromMinutes(2));
+                    //s.WithJsonSerializer();
+                    //s.WithRedisBackplane("redisConfigKey");
+                    //s.WithRedisConfiguration("redisConfigKey",
+                    //    cfg =>
+                    //    cfg.WithEndpoint("127.0.0.1", 6379)
+                    //    .WithDatabase(0)
+                    //    .WithAllowAdmin());
+                    //s.WithRedisCacheHandle("redisConfigKey", true)
+                    //    .EnablePerformanceCounters()
+                    //    .WithExpiration(ExpirationMode.Absolute, TimeSpan.FromMinutes(2));
 
                 });
 
