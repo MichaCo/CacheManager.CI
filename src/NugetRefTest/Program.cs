@@ -18,6 +18,7 @@ namespace NugetRefTest
                         f =>
                         {
                             f.AddDebug(LogLevel.Trace);
+                            f.AddConsole(LogLevel.Trace);
                         });
 
                     s.WithJsonSerializer();

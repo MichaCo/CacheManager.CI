@@ -19,7 +19,7 @@ namespace DotNetCoreApp
                         f =>
                         {
                             f.AddDebug(LogLevel.Trace);
-                            f.AddProvider(new MyConsoleLoggerProviderBecauseRC1DoesntWork());
+                            f.AddConsole(LogLevel.Trace);
                         });
 
                     s.WithDictionaryHandle();

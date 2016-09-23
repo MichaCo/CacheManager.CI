@@ -30,41 +30,4 @@ namespace Test
             cache.ClearRegion("region");
         }
     }
-
-    public class MyConsoleLoggerProviderBecauseRC1DoesntWork : ILoggerProvider
-    {
-        public ILogger CreateLogger(string categoryName)
-        {
-            return new MyConsoleLoggerBecauseRC1DoesntWork(categoryName);
-        }
-
-        public void Dispose()
-        {
-        }
-    }
-
-    public class MyConsoleLoggerBecauseRC1DoesntWork : ILogger
-    {
-        public MyConsoleLoggerBecauseRC1DoesntWork(string name)
-        {
-            this.Name = name;
-        }
-
-        public string Name { get; }
-
-        public IDisposable BeginScope<TState>(TState state)
-        {
-            return null;
-        }
-        
-        public bool IsEnabled(LogLevel logLevel)
-        {
-            return true;
-        }
-        
-        public void Log<TState>(LogLevel logLevel, EventId eventId, TState state, Exception exception, Func<TState, Exception, string> formatter)
-        {
-            Console.WriteLine("{0}: {1}: {2}", this.Name, logLevel, formatter(state, exception)); ;
-        }
-    }
 }

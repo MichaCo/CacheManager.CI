@@ -20,7 +20,7 @@ namespace ConsoleApp
                         f =>
                         {
                             f.AddDebug(LogLevel.Trace);
-                            f.AddProvider(new MyConsoleLoggerProviderBecauseRC1DoesntWork());
+                            f.AddConsole(LogLevel.Trace);
                         });
                     s.WithProtoBufSerializer();
                     //s.WithRedisBackPlate("redisConfigKey");
@@ -54,7 +54,7 @@ namespace ConsoleApp
                 .WithMicrosoftLogging(f =>
                 {
                     f.AddDebug(LogLevel.Trace);
-                    f.AddProvider(new MyConsoleLoggerProviderBecauseRC1DoesntWork());
+                    f.AddConsole(LogLevel.Trace);
                 })
                 .Build();
 
