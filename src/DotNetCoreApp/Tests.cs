@@ -13,6 +13,16 @@ namespace Test
             cache.Add("key", "value", "region");
             cache.AddOrUpdate("key", "region", "value", _ => "update value", 22);
 
+            string testVal = null;
+            if (!cache.TryGetOrAdd("key", "region", (k, r) => "really?", out testVal))
+            {
+                throw new Exception();
+            }
+            if(testVal != "update value")
+            {
+                throw new Exception();
+            }
+
             cache.Expire("key", "region", TimeSpan.FromDays(1));
             var val = cache.Get("key", "region");
             var item = cache.GetCacheItem("key", "region");
