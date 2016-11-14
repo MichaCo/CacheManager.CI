@@ -10,7 +10,7 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            var cache = CacheFactory.Build<string>(
+            var config = CacheManager.Core.ConfigurationBuilder.BuildConfiguration(
                 s =>
                 {
                     s.WithMaxRetries(50);
@@ -23,33 +23,33 @@ namespace ConsoleApp
                             f.AddConsole(LogLevel.Trace);
                         });
                     s.WithProtoBufSerializer();
-                    //s.WithRedisBackPlate("redisConfigKey");
-                    //s.WithRedisConfiguration("redisConfigKey",
+                    s.WithJsonSerializer();
+                    //s.WithRedisBackplane("redis");
+                    //s.WithRedisConfiguration("redis",
                     //    cfg =>
                     //    cfg.WithEndpoint("127.0.0.1", 6379)
                     //    .WithDatabase(0)
                     //    .WithAllowAdmin());
-                    s.WithDictionaryHandle();
-                    s.WithDictionaryHandle();
-                    s.WithMicrosoftMemoryCacheHandle();
-                    s.WithSystemRuntimeCacheHandle()
+                    s.WithDictionaryHandle("dic1");
+                    s.WithDictionaryHandle("dic2");
+                    s.WithMicrosoftMemoryCacheHandle("ms1");
+                    s.WithSystemRuntimeCacheHandle("runtime1")
                         .EnablePerformanceCounters()
                         .WithExpiration(ExpirationMode.Sliding, TimeSpan.FromSeconds(10));
 
-                    //s.WithRedisCacheHandle("redisConfigKey", true)
+                    //s.WithRedisCacheHandle("redis", true)
                     //    .EnablePerformanceCounters()
                     //    .WithExpiration(ExpirationMode.Absolute, TimeSpan.FromMinutes(2));
                 });
-
-            cache.Clear();
-
-            Tests.TestEachMethod(cache);
+            
+            Tests.TestEachMethod(CacheFactory.FromConfiguration<string>(config));
+            Tests.TestPoco(CacheFactory.FromConfiguration<Poco>(config));
 
             // json test
-            var config = new Microsoft.Extensions.Configuration.ConfigurationBuilder()
+            var logConfig = new Microsoft.Extensions.Configuration.ConfigurationBuilder()
                 .AddJsonFile("cache.json").Build();
 
-            var cacheConfig = config.GetCacheConfiguration()
+            var cacheConfig = logConfig.GetCacheConfiguration()
                 .Builder
                 .WithMicrosoftLogging(f =>
                 {
