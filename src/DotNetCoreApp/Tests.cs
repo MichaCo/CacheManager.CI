@@ -47,6 +47,7 @@ namespace Test
             cache.Clear();
 
             cache.Add("key", Poco.Create(), "region");
+            var x = cache.Get("key", "region");
             ExistsInAllHandles(cache, "key", "region");
 
             var p = Poco.Create();
