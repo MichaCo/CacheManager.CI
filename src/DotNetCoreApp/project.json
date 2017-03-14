@@ -24,13 +24,13 @@
     }
   },
   "dependencies": {
-    "CacheManager.Core": "0.9.3-beta-*",
-    "CacheManager.Microsoft.Extensions.Caching.Memory": "0.9.3-beta-*",
-    "CacheManager.Microsoft.Extensions.Configuration": "0.9.3-beta-*",
-    "CacheManager.Microsoft.Extensions.Logging": "0.9.3-beta-*",
-    "CacheManager.Serialization.Json": "0.9.3-beta-*",
-    "CacheManager.Serialization.ProtoBuf": "0.9.3-beta-*",
-    "CacheManager.StackExchange.Redis": "0.9.3-beta-*",
+    "CacheManager.Core": "1.0.0-beta-1456",
+    "CacheManager.Microsoft.Extensions.Caching.Memory": "1.0.0-beta-1456",
+    "CacheManager.Microsoft.Extensions.Configuration": "1.0.0-beta-1456",
+    "CacheManager.Microsoft.Extensions.Logging": "1.0.0-beta-1456",
+    "CacheManager.Serialization.Json": "1.0.0-beta-1456",
+    "CacheManager.Serialization.ProtoBuf": "1.0.0-beta-1456",
+    "CacheManager.StackExchange.Redis": "1.0.0-beta-1456",
     "Microsoft.Extensions.Logging.Console": "1.1.0",
     "Microsoft.Extensions.Logging.Debug": "1.1.0"
   },
