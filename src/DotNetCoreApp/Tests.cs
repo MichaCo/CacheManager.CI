@@ -14,9 +14,8 @@ namespace Test
 
             cache.Add("key", "value", "region");
             cache.AddOrUpdate("key", "region", "value", _ => "update value", 22);
-            
-            string testVal = null;
-            if (!cache.TryGetOrAdd("key", "region", (k, r) => "really?", out testVal))
+
+            if (!cache.TryGetOrAdd("key", "region", (k, r) => "really?", out string testVal))
             {
                 throw new Exception();
             }
@@ -31,8 +30,7 @@ namespace Test
             cache.Put("key", "put value", "region");
             cache.RemoveExpiration("key", "region");
 
-            string update2;
-            cache.TryUpdate("key", "region", _ => "update 2 value", out update2);
+            cache.TryUpdate("key", "region", _ => "update 2 value", out string update2);
 
             var update3 = cache.Update("key", "region", _ => "update 3 value");
 
@@ -54,8 +52,7 @@ namespace Test
             cache.AddOrUpdate("key", "region", Poco.Create(), _ => p, 22);
             ExistsInLastOnly(cache, "key", "region");
 
-            Poco testVal = null;
-            if (!cache.TryGetOrAdd("key", "region", (k, r) => Poco.Create(), out testVal))
+            if (!cache.TryGetOrAdd("key", "region", (k, r) => Poco.Create(), out Poco testVal))
             {
                 throw new Exception();
             }
@@ -81,8 +78,7 @@ namespace Test
             cache.RemoveExpiration("key", "region");
             ExistsInAllHandles(cache, "key", "region");
 
-            Poco update2;
-            cache.TryUpdate("key", "region", _ => Poco.Create(), out update2);
+            cache.TryUpdate("key", "region", _ => Poco.Create(), out Poco update2);
             ExistsInLastOnly(cache, "key", "region");
 
             var update3 = cache.Update("key", "region", _ => Poco.Create());
