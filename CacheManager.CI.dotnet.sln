@@ -1,21 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{316DD6BA-004C-41B5-816C-E6BB021B13CA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FF4D4BAE-6DB0-4D19-9EF5-37D21C0B039E}"
 	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
 		key.snk = key.snk
 		NuGet.config = NuGet.config
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DotNetCoreApp", "src\DotNetCoreApp\DotNetCoreApp.xproj", "{E579B9A7-F743-46D8-95B1-517E762AB9B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreApp", "src\DotNetCoreApp\DotNetCoreApp.csproj", "{E579B9A7-F743-46D8-95B1-517E762AB9B5}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "NugetRefTest", "src\NugetRefTest\NugetRefTest.xproj", "{8A2A03F0-7EFB-4004-8EEC-F7ED1FD59224}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NugetRefTest", "src\NugetRefTest\NugetRefTest.csproj", "{8A2A03F0-7EFB-4004-8EEC-F7ED1FD59224}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
