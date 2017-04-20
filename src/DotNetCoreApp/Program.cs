@@ -14,7 +14,9 @@ namespace DotNetCoreApp
                 {
                     s.WithMaxRetries(50);
                     s.WithRetryTimeout(100);
+                    s.WithJsonSerializer();
                     s.WithUpdateMode(CacheUpdateMode.Up);
+                    s.WithJsonSerializer();
                     s.WithMicrosoftLogging(
                         f =>
                         {
@@ -23,11 +25,7 @@ namespace DotNetCoreApp
                         });
 
                     s.WithDictionaryHandle();
-#if !NETCORE
-                    s.WithSystemRuntimeCacheHandle()
-                        .EnablePerformanceCounters()
-                        .WithExpiration(ExpirationMode.Sliding, TimeSpan.FromSeconds(10));
-#endif
+
                     //s.WithJsonSerializer();
                     //s.WithRedisBackplane("redisConfigKey");
                     //s.WithRedisConfiguration("redisConfigKey",

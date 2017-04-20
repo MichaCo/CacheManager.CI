@@ -38,6 +38,15 @@ namespace Test
 
             cache.Clear();
             cache.ClearRegion("region");
+            
+            cache.OnRemoveByHandle += (sender, args) =>
+            {
+                Console.WriteLine("removed " + args.Value);
+            };
+
+            cache.Add("test", "Got removed?");
+            cache.Expire("test", ExpirationMode.Absolute, TimeSpan.FromMilliseconds(1));
+            var x = cache.Get("test");
         }
 
         public static void TestPoco(ICacheManager<Poco> cache)
