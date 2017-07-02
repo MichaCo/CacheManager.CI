@@ -57,35 +57,35 @@
     <Reference Include="Bond.Reflection, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Bond.Core.CSharp.5.3.1\lib\net45\Bond.Reflection.dll</HintPath>
     </Reference>
-    <Reference Include="CacheManager.Core, Version=1.1.0.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CacheManager.Core.1.1.0\lib\net45\CacheManager.Core.dll</HintPath>
+    <Reference Include="CacheManager.Core, Version=1.1.1.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CacheManager.Core.1.1.1-beta-1567\lib\net45\CacheManager.Core.dll</HintPath>
     </Reference>
-    <Reference Include="CacheManager.Memcached, Version=1.1.0.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CacheManager.Memcached.1.1.0\lib\net45\CacheManager.Memcached.dll</HintPath>
+    <Reference Include="CacheManager.Memcached, Version=1.1.1.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CacheManager.Memcached.1.1.1-beta-1567\lib\net45\CacheManager.Memcached.dll</HintPath>
     </Reference>
-    <Reference Include="CacheManager.Microsoft.Extensions.Caching.Memory, Version=1.1.0.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CacheManager.Microsoft.Extensions.Caching.Memory.1.1.0\lib\net451\CacheManager.Microsoft.Extensions.Caching.Memory.dll</HintPath>
+    <Reference Include="CacheManager.Microsoft.Extensions.Caching.Memory, Version=1.1.1.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CacheManager.Microsoft.Extensions.Caching.Memory.1.1.1-beta-1567\lib\net451\CacheManager.Microsoft.Extensions.Caching.Memory.dll</HintPath>
     </Reference>
-    <Reference Include="CacheManager.Microsoft.Extensions.Configuration, Version=1.1.0.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CacheManager.Microsoft.Extensions.Configuration.1.1.0\lib\net45\CacheManager.Microsoft.Extensions.Configuration.dll</HintPath>
+    <Reference Include="CacheManager.Microsoft.Extensions.Configuration, Version=1.1.1.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CacheManager.Microsoft.Extensions.Configuration.1.1.1-beta-1567\lib\net45\CacheManager.Microsoft.Extensions.Configuration.dll</HintPath>
     </Reference>
-    <Reference Include="CacheManager.Microsoft.Extensions.Logging, Version=1.1.0.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CacheManager.Microsoft.Extensions.Logging.1.1.0\lib\net45\CacheManager.Microsoft.Extensions.Logging.dll</HintPath>
+    <Reference Include="CacheManager.Microsoft.Extensions.Logging, Version=1.1.1.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CacheManager.Microsoft.Extensions.Logging.1.1.1-beta-1567\lib\net45\CacheManager.Microsoft.Extensions.Logging.dll</HintPath>
     </Reference>
-    <Reference Include="CacheManager.Serialization.Bond, Version=1.1.0.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CacheManager.Serialization.Bond.1.1.0\lib\net45\CacheManager.Serialization.Bond.dll</HintPath>
+    <Reference Include="CacheManager.Serialization.Bond, Version=1.1.1.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CacheManager.Serialization.Bond.1.1.1-beta-1567\lib\net45\CacheManager.Serialization.Bond.dll</HintPath>
     </Reference>
-    <Reference Include="CacheManager.Serialization.Json, Version=1.1.0.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CacheManager.Serialization.Json.1.1.0\lib\net45\CacheManager.Serialization.Json.dll</HintPath>
+    <Reference Include="CacheManager.Serialization.Json, Version=1.1.1.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CacheManager.Serialization.Json.1.1.1-beta-1567\lib\net45\CacheManager.Serialization.Json.dll</HintPath>
     </Reference>
-    <Reference Include="CacheManager.Serialization.ProtoBuf, Version=1.1.0.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CacheManager.Serialization.ProtoBuf.1.1.0\lib\net45\CacheManager.Serialization.ProtoBuf.dll</HintPath>
+    <Reference Include="CacheManager.Serialization.ProtoBuf, Version=1.1.1.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CacheManager.Serialization.ProtoBuf.1.1.1-beta-1567\lib\net45\CacheManager.Serialization.ProtoBuf.dll</HintPath>
     </Reference>
-    <Reference Include="CacheManager.StackExchange.Redis, Version=1.1.0.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CacheManager.StackExchange.Redis.1.1.0\lib\net45\CacheManager.StackExchange.Redis.dll</HintPath>
+    <Reference Include="CacheManager.StackExchange.Redis, Version=1.1.1.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CacheManager.StackExchange.Redis.1.1.1-beta-1567\lib\net45\CacheManager.StackExchange.Redis.dll</HintPath>
     </Reference>
-    <Reference Include="CacheManager.SystemRuntimeCaching, Version=1.1.0.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CacheManager.SystemRuntimeCaching.1.1.0\lib\net45\CacheManager.SystemRuntimeCaching.dll</HintPath>
+    <Reference Include="CacheManager.SystemRuntimeCaching, Version=1.1.1.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CacheManager.SystemRuntimeCaching.1.1.1-beta-1567\lib\net45\CacheManager.SystemRuntimeCaching.dll</HintPath>
     </Reference>
     <Reference Include="Enyim.Caching, Version=2.16.0.0, Culture=neutral, PublicKeyToken=cec98615db04012e, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EnyimMemcached.2.16.0\lib\net35\Enyim.Caching.dll</HintPath>
