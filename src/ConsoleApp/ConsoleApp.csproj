@@ -57,35 +57,35 @@
     <Reference Include="Bond.Reflection, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Bond.Core.CSharp.5.3.1\lib\net45\Bond.Reflection.dll</HintPath>
     </Reference>
-    <Reference Include="CacheManager.Core, Version=1.1.1.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CacheManager.Core.1.1.1\lib\net45\CacheManager.Core.dll</HintPath>
+    <Reference Include="CacheManager.Core, Version=1.1.2.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CacheManager.Core.1.1.2-beta-1588\lib\net45\CacheManager.Core.dll</HintPath>
     </Reference>
-    <Reference Include="CacheManager.Memcached, Version=1.1.1.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CacheManager.Memcached.1.1.1\lib\net45\CacheManager.Memcached.dll</HintPath>
+    <Reference Include="CacheManager.Memcached, Version=1.1.2.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CacheManager.Memcached.1.1.2-beta-1588\lib\net45\CacheManager.Memcached.dll</HintPath>
     </Reference>
-    <Reference Include="CacheManager.Microsoft.Extensions.Caching.Memory, Version=1.1.1.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CacheManager.Microsoft.Extensions.Caching.Memory.1.1.1\lib\net451\CacheManager.Microsoft.Extensions.Caching.Memory.dll</HintPath>
+    <Reference Include="CacheManager.Microsoft.Extensions.Caching.Memory, Version=1.1.2.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CacheManager.Microsoft.Extensions.Caching.Memory.1.1.2-beta-1588\lib\net451\CacheManager.Microsoft.Extensions.Caching.Memory.dll</HintPath>
     </Reference>
-    <Reference Include="CacheManager.Microsoft.Extensions.Configuration, Version=1.1.1.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CacheManager.Microsoft.Extensions.Configuration.1.1.1\lib\net45\CacheManager.Microsoft.Extensions.Configuration.dll</HintPath>
+    <Reference Include="CacheManager.Microsoft.Extensions.Configuration, Version=1.1.2.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CacheManager.Microsoft.Extensions.Configuration.1.1.2-beta-1588\lib\net45\CacheManager.Microsoft.Extensions.Configuration.dll</HintPath>
     </Reference>
-    <Reference Include="CacheManager.Microsoft.Extensions.Logging, Version=1.1.1.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CacheManager.Microsoft.Extensions.Logging.1.1.1\lib\net45\CacheManager.Microsoft.Extensions.Logging.dll</HintPath>
+    <Reference Include="CacheManager.Microsoft.Extensions.Logging, Version=1.1.2.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CacheManager.Microsoft.Extensions.Logging.1.1.2-beta-1588\lib\net45\CacheManager.Microsoft.Extensions.Logging.dll</HintPath>
     </Reference>
-    <Reference Include="CacheManager.Serialization.Bond, Version=1.1.1.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CacheManager.Serialization.Bond.1.1.1\lib\net45\CacheManager.Serialization.Bond.dll</HintPath>
+    <Reference Include="CacheManager.Serialization.Bond, Version=1.1.2.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CacheManager.Serialization.Bond.1.1.2-beta-1588\lib\net45\CacheManager.Serialization.Bond.dll</HintPath>
     </Reference>
-    <Reference Include="CacheManager.Serialization.Json, Version=1.1.1.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CacheManager.Serialization.Json.1.1.1\lib\net45\CacheManager.Serialization.Json.dll</HintPath>
+    <Reference Include="CacheManager.Serialization.Json, Version=1.1.2.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CacheManager.Serialization.Json.1.1.2-beta-1588\lib\net45\CacheManager.Serialization.Json.dll</HintPath>
     </Reference>
-    <Reference Include="CacheManager.Serialization.ProtoBuf, Version=1.1.1.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CacheManager.Serialization.ProtoBuf.1.1.1\lib\net45\CacheManager.Serialization.ProtoBuf.dll</HintPath>
+    <Reference Include="CacheManager.Serialization.ProtoBuf, Version=1.1.2.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CacheManager.Serialization.ProtoBuf.1.1.2-beta-1588\lib\net45\CacheManager.Serialization.ProtoBuf.dll</HintPath>
     </Reference>
-    <Reference Include="CacheManager.StackExchange.Redis, Version=1.1.1.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CacheManager.StackExchange.Redis.1.1.1\lib\net45\CacheManager.StackExchange.Redis.dll</HintPath>
+    <Reference Include="CacheManager.StackExchange.Redis, Version=1.1.2.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CacheManager.StackExchange.Redis.1.1.2-beta-1588\lib\net45\CacheManager.StackExchange.Redis.dll</HintPath>
     </Reference>
-    <Reference Include="CacheManager.SystemRuntimeCaching, Version=1.1.1.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CacheManager.SystemRuntimeCaching.1.1.1\lib\net45\CacheManager.SystemRuntimeCaching.dll</HintPath>
+    <Reference Include="CacheManager.SystemRuntimeCaching, Version=1.1.2.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CacheManager.SystemRuntimeCaching.1.1.2-beta-1588\lib\net45\CacheManager.SystemRuntimeCaching.dll</HintPath>
     </Reference>
     <Reference Include="Enyim.Caching, Version=2.16.0.0, Culture=neutral, PublicKeyToken=cec98615db04012e, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EnyimMemcached.2.16.0\lib\net35\Enyim.Caching.dll</HintPath>
@@ -147,13 +147,13 @@
       <HintPath>..\..\packages\Microsoft.Extensions.Primitives.1.1.1\lib\netstandard1.0\Microsoft.Extensions.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="protobuf-net, Version=2.2.1.0, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\protobuf-net.2.2.1\lib\net40\protobuf-net.dll</HintPath>
+    <Reference Include="protobuf-net, Version=2.3.2.0, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\protobuf-net.2.3.2\lib\net40\protobuf-net.dll</HintPath>
     </Reference>
-    <Reference Include="StackExchange.Redis.StrongName, Version=1.2.3.0, Culture=neutral, PublicKeyToken=c219ff1ca8c2ce46, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\StackExchange.Redis.StrongName.1.2.3\lib\net45\StackExchange.Redis.StrongName.dll</HintPath>
+    <Reference Include="StackExchange.Redis.StrongName, Version=1.2.6.0, Culture=neutral, PublicKeyToken=c219ff1ca8c2ce46, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\StackExchange.Redis.StrongName.1.2.6\lib\net45\StackExchange.Redis.StrongName.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
