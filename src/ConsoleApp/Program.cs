@@ -25,6 +25,7 @@ namespace ConsoleApp
                         });
                     s.WithProtoBufSerializer();
                     s.WithJsonSerializer();
+                    s.WithDataContractBinarySerializer();
                     //s.WithRedisBackplane("redis");
                     //s.WithRedisConfiguration("redis",
                     //    cfg =>

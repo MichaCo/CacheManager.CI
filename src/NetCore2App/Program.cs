@@ -24,6 +24,7 @@ namespace NetCore2App
                 s.WithJsonSerializer();
                 s.WithBondSimpleJsonSerializer();
                 s.WithProtoBufSerializer();
+                s.WithDataContractBinarySerializer().WithDataContractGzJsonSerializer();
                 
                 s.WithDictionaryHandle();
 
