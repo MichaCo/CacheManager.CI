@@ -48,21 +48,7 @@ namespace ConsoleApp
 
             var cache = CacheFactory.FromConfiguration<Poco>(config);
             cache.Clear();
-
-            cache.Add("key", Poco.Create(), "region");
-
-            while (true)
-            {
-                Thread.Sleep(900);
-                Console.WriteLine("Getting key...");
-                var x = cache.Get("key", "region");
-                if (x == null)
-                {
-                    Console.WriteLine("Item has been removed");
-                    break;
-                }
-            }
-
+            
             Tests.TestEachMethod(CacheFactory.FromConfiguration<string>(config));
             Tests.TestPoco(CacheFactory.FromConfiguration<Poco>(config));
 
