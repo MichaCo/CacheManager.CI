@@ -3,11 +3,10 @@
   <PropertyGroup>
     <Description>NugetRefTest Console Application</Description>
     <Authors>Micha</Authors>
-    <TargetFrameworks>net452;netcoreapp1.0</TargetFrameworks>
+    <TargetFrameworks>net462;netcoreapp2.0</TargetFrameworks>
     <AssemblyName>NugetRefTest</AssemblyName>
     <OutputType>Exe</OutputType>
     <PackageId>NugetRefTest</PackageId>
-    <RuntimeFrameworkVersion Condition=" '$(TargetFramework)' == 'netcoreapp1.0' ">1.1.1</RuntimeFrameworkVersion>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
     <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
@@ -17,27 +16,26 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CacheManager.Microsoft.Extensions.Caching.Memory" Version="1.2.0-beta-1602" />
-    <PackageReference Include="CacheManager.Microsoft.Extensions.Configuration" Version="1.2.0-beta-1602" />
-    <PackageReference Include="CacheManager.Microsoft.Extensions.Logging" Version="1.2.0-beta-1602" />
-    <PackageReference Include="CacheManager.Serialization.Json" Version="1.2.0-beta-1602" />
-    <PackageReference Include="CacheManager.Serialization.ProtoBuf" Version="1.2.0-beta-1602" />
-    <PackageReference Include="CacheManager.Serialization.Bond" Version="1.2.0-beta-1602" />
-    <PackageReference Include="CacheManager.StackExchange.Redis" Version="1.2.0-beta-1602" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="1.1.2" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.2" />
+    <PackageReference Include="CacheManager.Microsoft.Extensions.Caching.Memory" Version="1.2.0" />
+    <PackageReference Include="CacheManager.Microsoft.Extensions.Configuration" Version="1.2.0" />
+    <PackageReference Include="CacheManager.Microsoft.Extensions.Logging" Version="1.2.0" />
+    <PackageReference Include="CacheManager.Serialization.Json" Version="1.2.0" />
+    <PackageReference Include="CacheManager.Serialization.ProtoBuf" Version="1.2.0" />
+    <PackageReference Include="CacheManager.Serialization.Bond" Version="1.2.0" />
+    <PackageReference Include="CacheManager.StackExchange.Redis" Version="1.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="2.2.0" />
   </ItemGroup>
 
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net452' ">
-    <PackageReference Include="CacheManager.SystemRuntimeCaching" Version="1.2.0-beta-1602" />
-    <PackageReference Include="CacheManager.Couchbase" Version="1.2.0-beta-1602" />
-    <PackageReference Include="CacheManager.Memcached" Version="1.2.0-beta-1602" />
-    <PackageReference Include="CacheManager.Web" Version="1.2.0-beta-1602" />
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net462' ">
+    <PackageReference Include="CacheManager.SystemRuntimeCaching" Version="1.2.0" />
+    <PackageReference Include="CacheManager.Couchbase" Version="1.2.0" />
+    <PackageReference Include="CacheManager.Memcached" Version="1.2.0" />
     <Reference Include="System" />
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
 
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'netcoreapp1.0' ">
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'netcoreapp2.0' ">
     <DefineConstants>$(DefineConstants);NETCORE</DefineConstants>
   </PropertyGroup>
 </Project>

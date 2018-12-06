@@ -24,13 +24,14 @@ namespace NetCore2App
                 s.WithJsonSerializer();
                 s.WithBondSimpleJsonSerializer();
                 s.WithProtoBufSerializer();
-                s.WithDataContractBinarySerializer().WithDataContractGzJsonSerializer();
-                
+                ////s.WithDataContractBinarySerializer()
+                ////.WithDataContractGzJsonSerializer();
+
                 s.WithDictionaryHandle();
 
-                s.WithSystemRuntimeCacheHandle()
-                    .EnablePerformanceCounters()
-                    .WithExpiration(ExpirationMode.Sliding, TimeSpan.FromSeconds(10));
+                ////s.WithSystemRuntimeCacheHandle()
+                ////    .EnablePerformanceCounters()
+                ////    .WithExpiration(ExpirationMode.Sliding, TimeSpan.FromSeconds(10));
 
                 s.WithCouchbaseConfiguration("couch", new Couchbase.Configuration.Client.ClientConfiguration());
                 s.WithCouchbaseCacheHandle("couch", isBackplaneSource: false);
@@ -43,7 +44,6 @@ namespace NetCore2App
                 s.WithRedisCacheHandle("redisConfigKey", true)
                     .EnablePerformanceCounters()
                     .WithExpiration(ExpirationMode.Absolute, TimeSpan.FromMinutes(2));
-
             });
         }
     }
