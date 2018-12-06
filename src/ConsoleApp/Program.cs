@@ -24,8 +24,9 @@ namespace ConsoleApp
                             f.AddConsole(LogLevel.Trace);
                         });
                     s.WithProtoBufSerializer();
+                    s.WithBondFastBinarySerializer();
                     s.WithJsonSerializer();
-                    s.WithDataContractBinarySerializer();
+                    //s.WithDataContractBinarySerializer();
                     //s.WithRedisBackplane("redis");
                     //s.WithRedisConfiguration("redis",
                     //    cfg =>
@@ -42,6 +43,7 @@ namespace ConsoleApp
                     s.WithDictionaryHandle("dic2")
                         .WithExpiration(ExpirationMode.Absolute, TimeSpan.FromSeconds(5));
 
+                    //s.WithRedisConfiguration("redis", "localhost, allowAdmin=true");
                     //s.WithRedisCacheHandle("redis", true)
                     //    .EnablePerformanceCounters()
                     //    .WithExpiration(ExpirationMode.Absolute, TimeSpan.FromSeconds(5));
@@ -49,7 +51,7 @@ namespace ConsoleApp
 
             var cache = CacheFactory.FromConfiguration<Poco>(config);
             cache.Clear();
-            
+
             Tests.TestEachMethod(CacheFactory.FromConfiguration<string>(config));
             Tests.TestPoco(CacheFactory.FromConfiguration<Poco>(config));
 
@@ -61,8 +63,8 @@ namespace ConsoleApp
                 .Builder
                 .WithMicrosoftLogging(f =>
                 {
-                    f.AddDebug(LogLevel.Trace);
-                    f.AddConsole(LogLevel.Trace);
+                    //f.AddDebug(LogLevel.Trace);
+                    //f.AddConsole(LogLevel.Trace);
                 })
                 .Build();
 

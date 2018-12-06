@@ -7,7 +7,7 @@
       "name": "myCache",
       "updateMode": "Up",
       "serializer": {
-        "knownType": "BondSimpleJson"
+        "knownType": "GzJson"
       },
       "handles": [
         {
