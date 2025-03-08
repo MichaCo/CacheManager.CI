@@ -1,5 +1,6 @@
 ﻿using System;
 using CacheManager.Core;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Test;
 
@@ -9,7 +10,17 @@ namespace DotNetCoreApp
     {
         public static void Main(string[] args)
         {
-            var cache = CacheFactory.Build<string>(
+            var services = new ServiceCollection();
+            services.AddLogging(c =>
+            {
+                c.AddConsole();
+                c.AddDebug();
+                c.SetMinimumLevel(LogLevel.Trace);
+            });
+
+            using var p = services.BuildServiceProvider();
+
+            using var cache = CacheFactory.Build<string>(
                 s =>
                 {
                     s.WithMaxRetries(50);
@@ -17,12 +28,6 @@ namespace DotNetCoreApp
                     s.WithJsonSerializer();
                     s.WithUpdateMode(CacheUpdateMode.Up);
                     s.WithJsonSerializer();
-                    s.WithMicrosoftLogging(
-                        f =>
-                        {
-                            f.AddDebug(LogLevel.Trace);
-                            f.AddConsole(LogLevel.Trace);
-                        });
 
                     s.WithDictionaryHandle();
 
@@ -37,7 +42,8 @@ namespace DotNetCoreApp
                     //    .EnablePerformanceCounters()
                     //    .WithExpiration(ExpirationMode.Absolute, TimeSpan.FromMinutes(2));
 
-                });
+                },
+                loggerFactory: p.GetRequiredService<ILoggerFactory>());
 
             cache.Clear();
             Tests.TestEachMethod(cache);
